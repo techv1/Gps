@@ -1,0 +1,51 @@
+[versions]
+# SDK Versions
+compileSdk = "35"
+minSdk = "23"
+targetSdk = "35"
+
+# Plugin Versions
+agp = "8.7.3"
+kotlin = "2.1.0"
+
+# AndroidX Versions
+core-ktx = "1.15.0"
+appcompat = "1.7.0"
+constraintlayout = "2.2.0"
+cardview = "1.0.0"
+lifecycle = "2.8.7"
+
+# Google Material
+material = "1.12.0"
+
+# Kotlin Coroutines
+kotlinx-coroutines = "1.9.0"
+
+[libraries]
+# AndroidX Core
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# Material Design
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# Layout
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+
+# Lifecycle
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+# Kotlin Coroutines
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[bundles]
+androidx-lifecycle = ["androidx-lifecycle-runtime-ktx", "androidx-lifecycle-viewmodel-ktx"]
+kotlinx-coroutines = ["kotlinx-coroutines-android", "kotlinx-coroutines-core"]
