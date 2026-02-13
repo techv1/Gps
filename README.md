@@ -65,8 +65,8 @@ The app generates realistic GPS data matching your sample:
 
 ### Method 2: Manual Coordinates
 
-1. Enter latitude in the first field (e.g., `28.319769`)
-2. Enter longitude in the second field (e.g., `74.282778`)
+1. Enter latitude in the first field (e.g., `38.310769`)
+2. Enter longitude in the second field (e.g., `94.289778`)
 3. Click **Start Simulation**
 
 ### Monitoring Simulation
